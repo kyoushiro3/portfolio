@@ -18,15 +18,29 @@ const config = {
       },
     },
     extend: {
+      fontSize: {
+        sm: '0.844rem',
+        base: '1rem',
+        lg: '1.125rem',
+        xl: '1.5rem',
+        '2xl': '2.25rem',
+        '3xl': '3rem',
+        '4xl': '3.75rem',
+        '5xl': '4.5rem',
+      },
       colors: {
+        red:"rgb(245, 78, 0)",
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
-        background: "hsl(var(--background))",
+        background: '#eeefe9',
+        success: "#77b96c",
+        warning:"#f7a501",
+        danger: "#f96132",
         foreground: "hsl(var(--foreground))",
         primary: {
-          DEFAULT: "hsl(var(--primary))",
-          foreground: "hsl(var(--primary-foreground))",
+          DEFAULT: "rgb(21, 21, 21)",
+          foreground: "rgb(21, 21, 21)",
         },
         secondary: {
           DEFAULT: "hsl(var(--secondary))",
@@ -41,7 +55,7 @@ const config = {
           foreground: "hsl(var(--muted-foreground))",
         },
         accent: {
-          DEFAULT: "hsl(var(--accent))",
+          DEFAULT: "rgb(229,231,224)",
           foreground: "hsl(var(--accent-foreground))",
         },
         popover: {
@@ -67,14 +81,28 @@ const config = {
           from: { height: "var(--radix-accordion-content-height)" },
           to: { height: "0" },
         },
+        "staggerInLg":{
+          '0%':
+            {transform: 'translateY(100%)'},
+          '100%':
+            {transform: 'translateY(0)'},
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
+        "hero-title": "staggerInLg .5s .6s ease-out",
+
+      },
+      fontFamily: {
+        sans: ['var(--font-geist-sans)'],
+        mono: ['var(--font-geist-mono)'],
+        raleway: ['var(--font-raleway)'],
+        apercu: ['Apercu', 'sans-serif'],
+        apercubold: ['Apercu-Bold', 'sans-serif'],
       },
     },
   },
-  plugins: [require("tailwindcss-animate")],
 } satisfies Config
 
 export default config

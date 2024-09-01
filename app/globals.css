@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+
 @layer base {
   :root {
     --background: 0 0% 100%;
@@ -67,3 +68,18 @@
     @apply bg-background text-foreground;
   }
 }
+
+@font-face {
+  font-family:'Apercu';
+  src: url('/fonts/Apercu-Regular.otf');
+}
+@font-face {
+  font-family:'Apercu-Bold';
+  src: url('/fonts/Apercu-Bold.otf');
+}
+
+
+
+
+
+
