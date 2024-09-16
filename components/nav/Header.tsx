@@ -11,18 +11,18 @@ export default function Header() {
     setIsOpen(!isOpen);
   };
   return (
-    <header className="w-full px-4 sm:px-6 mx-auto bg-yellow-400 border-b border-stone-400 border-opacity-1 border z-999 fixed">
-      <nav className="max-w-6xl mx-auto px-4 py-4">
-        <div className="flex md:flex-row justify-between items-center">
-          <div className="flex flex-row gap-8">
+    <header className="w-full px-4 sm:px-6 mx-auto py-8 bg-neutral-50">
+      <nav className="lg:max-w-xl md:max-w-md mx-auto border-neutral-800 border-2 bg-white px-3 py-4 rounded-2xl shadow-[7px_7px_0_0] shadow-warning">
+        <div className="flex md:flex-row items-center justify-center">
+          {/* <div className="flex flex-row gap-8">
             <b>Kim Darren</b>
-          </div>
+          </div> */}
           <div className="space-x-8 hidden md:block">
             <ul className="md:flex hidden list-none m-0 p-0">
               <li className="h-full">
                 <a
                   href="/"
-                  className="text-sm font-medium flex h-full items-center relative px-3  mdlg:p-4 opacity-70 hover:opacity-100"
+                  className="text-md text-black font-bold flex h-full items-center relative px-3 "
                 >
                   About
                 </a>
@@ -31,7 +31,7 @@ export default function Header() {
                 {" "}
                 <a
                   href="/"
-                  className="text-sm font-medium flex h-full items-center relative px-3  mdlg:p-4 opacity-70 hover:opacity-100"
+                  className="text-md text-black font-bold flex h-full items-center relative px-3  hover:text-sky-500"
                 >
                   Projects
                 </a>
@@ -39,7 +39,7 @@ export default function Header() {
               <li className="h-full">
                 <a
                   href="/"
-                  className="text-sm font-medium flex h-full items-center relative px-3  mdlg:p-4 opacity-70 hover:opacity-100"
+                  className="text-md text-black font-bold flex h-full items-center relative px-3  hover:text-sky-500"
                 >
                   Experience
                 </a>
@@ -47,14 +47,14 @@ export default function Header() {
               <li className="h-full">
                 <a
                   href="/"
-                  className="text-sm font-medium flex h-full items-center relative px-3 mdlg:p-4 opacity-70 hover:opacity-100"
+                  className="text-md text-black font-bold flex h-full items-center relative px-3  hover:text-sky-500"
                 >
                   Contact
                 </a>
               </li>
             </ul>
           </div>
-          <Social />
+          {/* <Social /> */}
           <div className="space-x-8 block md:hidden mt-4">
           <button
             onClick={toggleMenu}

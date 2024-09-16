@@ -23,7 +23,7 @@ const config = {
         base: '1rem',
         lg: '1.125rem',
         xl: '1.5rem',
-        '2xl': '2.25rem',
+        "2xl": '2.25rem',
         '3xl': '3rem',
         '4xl': '3.75rem',
         '5xl': '4.5rem',
@@ -34,6 +34,7 @@ const config = {
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
         background: '#eeefe9',
+        dark:"rgb(29,31,39)",
         success: "#77b96c",
         warning:"#f7a501",
         danger: "#f96132",
@@ -97,10 +98,16 @@ const config = {
       fontFamily: {
         sans: ['var(--font-geist-sans)'],
         mono: ['var(--font-geist-mono)'],
-        raleway: ['var(--font-raleway)'],
+        raleway: ['var(--font-onest)'],
         apercu: ['Apercu', 'sans-serif'],
         apercubold: ['Apercu-Bold', 'sans-serif'],
       },
+      boxShadow:{
+        'custom': '7px 7px 0 0 var(--neutral--800)',
+      },
+      lineHeight: {
+        '1':'1.181em',
+      }
     },
   },
 } satisfies Config

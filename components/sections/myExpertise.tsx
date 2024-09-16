@@ -2,7 +2,7 @@ import { HiMiniComputerDesktop } from "react-icons/hi2";
 
 export default function MyExpertise() {
   return (
-    <section className="py-28 px-14">
+    <section className="bg-dark md:pb-0 relative after:absolute after:h-48 after:bottom-0 after:left-0 after:w-full after:bg-gradient-to-b after:from-dark after:to-[#13161B] after:content-[''] -mb-px">
       <div className="relative w-full z-10">
         <div className="max-w-screen-2xl mx-auto mt-4 mb-8 md:mb-16 md:my-16 px-2 md:px-2 z-10 relative">
           <h1 className="m-0 font-raleway text-center text-4xl md:text-7xl sm:text-3xl text-primary-foreground dark:text-primary-dark overflow-hidden pb-1">
@@ -28,8 +28,8 @@ export default function MyExpertise() {
                     </span> </h5>
               </div>
               
-              <div className="mt-4 after:absolute after:left-0 after:w-1 after:h-16 after:bg-slate-800">
-                <span className="before:content-['<h3>'] after:content-['</h3>']">Experienced in both functional and OOP: Dart, Python, Java, JavaScript, TypeScript.</span>
+              <div className="mt-10 pl-8 after:absolute after:left-14 after:-mt-20 after:md:-mt-28 after:w-1 after:h-28 after:md:h-36 after:bg-slate-800">
+                <span className="relative before:content-['<h3>'] before:-ml-6 before:-mt-6 before:absolute after:content-['</h3>'] after:absolute after:mt-8 after:-ml-28">Experienced in both functional and OOP: Dart, Python, Java, JavaScript, TypeScript.</span>
               </div>
             </div>
             <div className="flex items-center justify-center  w-full  h-24 py-6  lg:px-2 lg:h-40 bg-accent-dark  text-primary dark:text-primary-dark border-t border-l border-b border-black ">

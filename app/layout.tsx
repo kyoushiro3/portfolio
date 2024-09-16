@@ -4,10 +4,10 @@ import "./globals.css";
 import Header from "@/components/nav/Header";
 import Footer from "@/components/nav/Footer";
 import { GeistSans } from 'geist/font/sans';
-import { Raleway } from "next/font/google";
+import { Onest } from "next/font/google";
 
 const inter = Inter({ subsets: ["latin"]});
-const raleway = Raleway({ subsets: ["latin"], variable: '--font-raleway'});
+const onest = Onest({ subsets: ["latin"],weight:["100", "200","300","400","500","600", "700", "800", "900"], variable: '--font-onest'});
 
 export const metadata: Metadata = {
   title: "Kim Darren",
@@ -22,7 +22,7 @@ export default function RootLayout({
   return (
     <html lang="en">
      
-      <body className={`${raleway.className}`}>
+      <body className={`${onest.className}`}>
       <Header />
         {children}
       <Footer/>
