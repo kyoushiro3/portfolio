@@ -12,7 +12,7 @@ export default function Header() {
   };
   return (
     <header className="w-full px-4 sm:px-6 mx-auto py-8 bg-neutral-50">
-      <nav className="lg:max-w-xl md:max-w-md mx-auto border-neutral-800 border-2 bg-white px-3 py-4 rounded-2xl shadow-[7px_7px_0_0] shadow-warning">
+      <nav className="lg:max-w-xl md:max-w-md mx-auto border-neutral-800 border-2 bg-white px-3 py-4 rounded-2xl shadow-[7px_7px_0_0] shadow-yellow-600">
         <div className="flex md:flex-row items-center justify-center">
           {/* <div className="flex flex-row gap-8">
             <b>Kim Darren</b>
@@ -55,43 +55,43 @@ export default function Header() {
             </ul>
           </div>
           {/* <Social /> */}
-          <div className="space-x-8 block md:hidden mt-4">
+          <div className="flex items-end gap-56 justify-end md:hidden my-2">
+          <HiX color="bg-neutral-800" size={30} />
           <button
             onClick={toggleMenu}
             type="button"
-            className="focus:outline-none focus:text-white"
           >
-            {isOpen ? <HiX /> : <HiMenu />}
+            {isOpen ? <HiX color="bg-neutral-800" size={30} /> : <HiMenu color="bg-neutral-800" size={30}/>}
           </button>
         </div>
         </div>
 
         {isOpen && (
-          <div className="md:hidden">
-            <div className="fixed inset-0 bg-background z-50 flex flex-col items-center justify-center">
-              <div className="space-y-6 text-center">
+          <div className="md:hidden absolute top-32 w-full left-0 right-0 overflow-hidden px-4 py-2 z-50 transition-all transform duration-500 ease-in-out">
+            <div className="border-2 border-neutral-800 rounded-xl flex flex-col items-start py-8 px-6 overflow-hidden bg-neutral-100 z-999">
+              <div className="">
                 <a
                   href="#"
-                  className="block text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-base font-medium"
+                  className="block mb-4 text-neutral-800 hover:text-sky-500  rounded-md text-lg font-bold"
                   onClick={() => setIsOpen(false)}
                 >
                   Home
                 </a>
                 <a
                   href="#"
-                  className="block text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-base font-medium"
+                  className="block mb-4 text-neutral-800 hover:text-sky-500  rounded-md text-lg font-bold"
                 >
                   About
                 </a>
                 <a
                   href="#"
-                  className="block text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-base font-medium"
+                  className="block mb-4 text-neutral-800  hover:text-sky-500  rounded-md text-lg font-bold"
                 >
                   Services
                 </a>
                 <a
                   href="#"
-                  className="block text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-base font-medium"
+                  className="block text-neutral-800 hover:text-sky-500  rounded-md text-lg font-bold"
                 >
                   Contact
                 </a>

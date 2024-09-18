@@ -88,17 +88,22 @@ const config = {
           '100%':
             {transform: 'translateY(0)'},
         },
+        fadeIn: {
+          '0%': { opacity: '0' },
+          '100%': { opacity: '1' },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
         "hero-title": "staggerInLg .5s .6s ease-out",
+        "fadeIn": "fadeIn 3s ease both 1.2s",
 
       },
       fontFamily: {
         sans: ['var(--font-geist-sans)'],
         mono: ['var(--font-geist-mono)'],
-        raleway: ['var(--font-onest)'],
+        onest: ['var(--font-onest)'],
         apercu: ['Apercu', 'sans-serif'],
         apercubold: ['Apercu-Bold', 'sans-serif'],
       },

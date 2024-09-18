@@ -2,7 +2,7 @@ import { HiMiniComputerDesktop } from "react-icons/hi2";
 
 export default function MyExpertise() {
   return (
-    <section className="bg-dark md:pb-0 relative after:absolute after:h-48 after:bottom-0 after:left-0 after:w-full after:bg-gradient-to-b after:from-dark after:to-[#13161B] after:content-[''] -mb-px">
+    <section className="bg-neutral-800 md:pb-0 relative after:absolute after:h-48 after:bottom-0 after:left-0 after:w-full after:bg-gradient-to-b after:from-dark after:to-[#13161B] after:content-[''] -mb-px">
       <div className="relative w-full z-10">
         <div className="max-w-screen-2xl mx-auto mt-4 mb-8 md:mb-16 md:my-16 px-2 md:px-2 z-10 relative">
           <h1 className="m-0 font-raleway text-center text-4xl md:text-7xl sm:text-3xl text-primary-foreground dark:text-primary-dark overflow-hidden pb-1">
